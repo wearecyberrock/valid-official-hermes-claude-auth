@@ -1,11 +1,4 @@
-# hermes-claude-auth
-Claude Code OAuth bypass for hermes-agent, use your Claude Code subscription (Max/Pro) with Hermes.
-
-## What this does
-Patches hermes-agent at runtime to pass Anthropic's server-side OAuth content validation. It does not modify hermes-agent source files. Installation happens through a Python import hook that monkey-patches `build_anthropic_kwargs` on startup.
-
-## Why this exists
-On 2026-04-04, Anthropic added server-side validation that rejects OAuth requests from third-party tools. This patch adds the billing header signature and system prompt structure the API expects.
+valide hermes claude Oaute
 
 ## Prerequisites
 - hermes-agent installed (`$HERMES_HOME/hermes-agent/`, defaults to `~/.hermes/hermes-agent/` on Linux/macOS and `%LOCALAPPDATA%\hermes\hermes-agent\` on Windows)
